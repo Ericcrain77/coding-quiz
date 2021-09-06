@@ -1,14 +1,68 @@
 :root {
-    --primary-color: #FFFFFF;
-    --secondary-color: #351C75;
-    --tertiary-color: #B03DE2;
+    --primary-color: #351C75;
+    --secondary-color: #B03DE2;
+    --tertiary-color: #D9D3E9;
     --quaternary-color: #010101;
     --quinary-color: #9E9E9E;
-    --senary-color: #D9D3E9;
   }
   
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #hs-btn {
+    border: none;
+    background-color: #FFFFFF;
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin: 25px 794.27px 25px 25px;
+  }
+
+  #timer {
+      color: var(--quaternary-color);
+      font-size: 24px;
+      margin: 25px 25px 25px 794.27px;
+  }
+
+  .page-top {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .start-screen {
+      margin: 100px 400px 0 400px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .start-screen h1 {
+      font-size: 55px;
+      padding: 0 0 30px 0;
+      font-weight: bolder;
+  }
+
+  .start-screen h2 {
+      font-size: 28px;
+      padding: 0 125px 30px 125px;
+      font-weight: lighter;
+  }
+
+  .start-btn {
+      font-size: 28px;
+      padding: 18px 22px 18px 22px;
+      color: #ffffff;
+      background-color: var(--primary-color);
+      border-radius: 12px;
+  }
+
+  .start-btn:hover {
+      background-color: var(--secondary-color);
   }
