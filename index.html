@@ -17,13 +17,55 @@
         </div>
     </header>
 
-    <main class="start-screen">
+    <main>
         <div>
-            <section>
+            <section class="start-screen">
                 <div>
                     <h1>Coding Quiz Challenge</h1>
                     <h2>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h2>
                     <button type="button" class="start-btn">Start Quiz</button>
+                </div>
+            </section>
+
+            <section class="questions">
+                <div>
+                    <div>
+                        <h1 id="question">Question</h1>
+                        <ul>
+                            <li><button type="button" id="answer1" class="answer-btn">1. Answer</button></li>
+                            <li><button type="button" id="answer2" class="answer-btn">2. Answer</button></li>
+                            <li><button type="button" id="answer3" class="answer-btn">3. Answer</button></li>
+                            <li><button type="button" id="answer4" class="answer-btn">4. Answer</button></li>
+                        </ul>
+                        <div>
+                            <!-- Correct or Wrong line-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="finish-screen">
+                <div>
+                    <div>
+                        <h1>All done!</h1>
+                        <p>Your final score is <span id="score">0</span>.</p>
+                        <p>Enter Initials:<input class="initials"/>
+                        <button type="button" class="submit-btn">Submit</button>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="high-scores">
+                <div>
+                    <div>
+                        <h1>High Scores</h1>
+                        <ol id="scores-list">
+                            <!--High Scores listed in order from highest to lowest-->
+                        </ol>
+                        <button class="return-btn">Go Back</button>
+                        <button class="clear-btn">Clear high scores</button>
+                    </div>
                 </div>
             </section>
         </div>

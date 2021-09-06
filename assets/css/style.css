@@ -4,65 +4,194 @@
     --tertiary-color: #D9D3E9;
     --quaternary-color: #010101;
     --quinary-color: #9E9E9E;
-  }
+}
   
-  * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
-  body {
+body {
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
-  #hs-btn {
+#hs-btn {
     border: none;
     background-color: #FFFFFF;
     color: var(--secondary-color);
     font-size: 24px;
     margin: 25px 794.27px 25px 25px;
-  }
+}
 
-  #timer {
-      color: var(--quaternary-color);
-      font-size: 24px;
-      margin: 25px 25px 25px 794.27px;
-  }
+#timer {
+    color: var(--quaternary-color);
+    font-size: 24px;
+    margin: 25px 25px 25px 794.27px;
+}
 
-  .page-top {
-      display: flex;
-      flex-wrap: wrap;
-  }
+.page-top {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-  .start-screen {
-      margin: 100px 400px 0 400px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
-  }
+.start-screen {
+    margin: 100px 400px 0 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
 
-  .start-screen h1 {
-      font-size: 55px;
-      padding: 0 0 30px 0;
-      font-weight: bolder;
-  }
+.start-screen h1 {
+    font-size: 55px;
+    padding: 0 0 30px 0;
+    font-weight: bolder;
+}
 
-  .start-screen h2 {
-      font-size: 28px;
-      padding: 0 125px 30px 125px;
-      font-weight: lighter;
-  }
+.start-screen h2 {
+    font-size: 28px;
+    padding: 0 125px 30px 125px;
+    font-weight: lighter;
+}
 
-  .start-btn {
-      font-size: 28px;
-      padding: 18px 22px 18px 22px;
-      color: #ffffff;
-      background-color: var(--primary-color);
-      border-radius: 12px;
-  }
+.start-btn {
+    font-size: 28px;
+    padding: 18px 22px 18px 22px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+}
 
-  .start-btn:hover {
-      background-color: var(--secondary-color);
-  }
+.start-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.questions {
+    margin: 100px 400px 0 400px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: left;
+}
+
+.questions div h1 {
+    font-size: 50px;
+    padding: 0 0 30px 0;
+    font-weight: bolder;
+}
+
+.questions div ul {
+    list-style-type: none;
+}
+
+.questions div ul li {
+    list-style-type: none;
+    margin: 15px 0 15px 0;
+}
+
+.answer-btn {
+    font-size: 28px;
+    padding: 18px 22px 18px 22px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    width: 450px;
+    text-align: left;
+}
+
+.answer-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.finish-screen {
+    margin: 100px 400px 0 400px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: left;
+}
+
+.finish-screen div h1 {
+    font-size: 50px;
+    margin: 0 0 20px 0;
+    font-weight: bolder;
+}
+
+.finish-screen div p {
+    font-size: 28px;
+    font-weight: lighter;
+    margin: 10px 0 20px 0;
+}
+
+.initials {
+    height: 50px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 4px;
+    outline: none;
+    font-size: 28px;
+    margin: 0 15px 0 15px;
+    padding: 0 5px 0 5px;
+}
+
+.initials:focus {
+    border: 2px solid #337FC4;
+    outline: none;
+    font-size: 28px;
+    margin: 0 15px 0 15px;
+    padding: 0 5px 0 5px;
+}
+
+.submit-btn {
+    font-size: 28px;
+    padding: 18px 22px 18px 22px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.high-scores {
+    margin: 100px 400px 0 400px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: left;
+}
+
+.high-scores div h1 {
+    font-size: 50px;
+    margin: 0 0 30px 0;
+    font-weight: bolder;
+}
+
+.return-btn {
+    font-size: 28px;
+    padding: 18px 22px 18px 22px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.return-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.clear-btn {
+    font-size: 28px;
+    padding: 18px 22px 18px 22px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.clear-btn:hover {
+    background-color: var(--secondary-color);
+}
