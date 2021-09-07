@@ -104,6 +104,14 @@ body {
     background-color: var(--secondary-color);
 }
 
+.right-or-wrong {
+    font-size: 28px;
+    font-weight: lighter;
+    font-style: italic;
+    border-top: 2px solid gray;
+    color: gray;
+}
+
 .finish-screen {
     margin: 100px 400px 0 400px;
     display: none;
