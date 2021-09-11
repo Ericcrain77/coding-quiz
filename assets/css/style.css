@@ -14,6 +14,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #hs-btn {
@@ -21,13 +23,17 @@ body {
     background-color: #FFFFFF;
     color: var(--secondary-color);
     font-size: 24px;
-    margin: 25px 794.27px 25px 25px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
 }
 
 #timer {
     color: var(--quaternary-color);
     font-size: 24px;
-    margin: 25px 25px 25px 794.27px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
 }
 
 .page-top {
@@ -36,9 +42,11 @@ body {
 }
 
 .start-screen {
-    margin: 100px 400px 0 400px;
-    display: flex;
-    flex-wrap: wrap;
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    right: 400px;
+    display: block;
     justify-content: center;
     text-align: center;
 }
@@ -68,11 +76,13 @@ body {
 }
 
 .questions {
-    margin: 100px 400px 0 400px;
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    right: 400px;
     display: none;
-    flex-wrap: wrap;
-    justify-content: left;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
 }
 
 .questions div h1 {
@@ -104,7 +114,7 @@ body {
     background-color: var(--secondary-color);
 }
 
-.right-or-wrong {
+.answer-check {
     font-size: 28px;
     font-weight: lighter;
     font-style: italic;
@@ -113,11 +123,13 @@ body {
 }
 
 .finish-screen {
-    margin: 100px 400px 0 400px;
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    right: 400px;
     display: none;
-    flex-wrap: wrap;
-    justify-content: left;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
 }
 
 .finish-screen div h1 {
@@ -165,11 +177,13 @@ body {
 }
 
 .high-scores {
-    margin: 100px 400px 0 400px;
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    right: 400px;
     display: none;
-    flex-wrap: wrap;
-    justify-content: left;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
 }
 
 .high-scores div h1 {
