@@ -1,5 +1,5 @@
 // Global Variables //
-var timer = 75;
+var time = 75;
 var questionIndex = 0;
 var penalty = 10;
 
@@ -41,4 +41,28 @@ var clear = document.querySelector(".clear-btn");
 
 var goBack = document.querySelector(".return-btn");
 
+var startScreen = document.querySelector(".start-screen");
+
+var questionScreen = document.querySelector(".question-screen");
+
+var finishScreen = document.querySelector(".finish-screen");
+
+var highScoreScreen = document.querySelector(".high-scores");
+// Variables End //
+
 // Code Start //
+startQuiz.addEventListener("click", function() {
+
+    if (time === 75) {
+        time = setInterval(function() {
+            timeLeft--;
+        }, 1000);
+    }
+
+    if (startScreen.style.display === "block") {
+        startScreen.style.display = "none";
+        questionScreen.style.display = "block";
+    }
+
+    console.log();
+});
