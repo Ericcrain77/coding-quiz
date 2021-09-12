@@ -1,8 +1,59 @@
 // Global Variables //
-var time = 75;
+// Variable Integers //
+var startTime = 75;
+
 var questionIndex = 0;
+
 var penalty = 10;
 
+var score = 0;
+
+
+// APIs Variables // 
+var highScoreButton = document.getElementById("#hs-btn");
+
+var timer = document.getElementsById("#timer");
+
+var timeLeft = document.getElementById("#time");
+
+var startScreen = document.getElementByClassName(".start-screen");
+
+var startQuiz = document.getElementByClassName(".start-btn");
+
+var questionScreen = document.getElementByClassName(".question-screen");
+
+var questionContainer = document.getElementById("#question-container");
+
+var question = document.getElemberById("#question");
+
+var answer1 = document.getElementById("#answer1");
+
+var answer2 = document.getElementById("#answer2");
+
+var answer3 = document.getElementById("#answer3");
+
+var answer4 = document.getElementById("#answer4");
+
+var answerButton = document.getElementsByClassName(".answer-btn");
+
+var answerCheck = document.getElementByClassName(".answer-check");
+
+var finishScreen = document.getElementByClassName(".finish-screen");
+
+var initials = document.getElementByClassName(".initials");
+
+var submit = document.getElementByClassName(".submit-btn");
+
+var highScore = document.getElementByClassName(".high-scores");
+
+var scoreList = document.getElementByClassName(".scores-list");
+
+var goBack = document.getElementByClassName(".return-btn");
+
+var clear = document.getElementByClassName(".clear-btn");
+
+
+// Questions Array//
 var questions = [
     {
         q: "Commonly used data types do NOT inlcude:",
@@ -30,39 +81,6 @@ var questions = [
         correctAnswer: "3"
     }
 ];
-
-var timeLeft = document.querySelector("#time");
-
-var startQuiz = document.querySelector(".start-btn");
-
-var highScore = document.querySelector(".high-scores");
-
-var clear = document.querySelector(".clear-btn");
-
-var goBack = document.querySelector(".return-btn");
-
-var startScreen = document.querySelector(".start-screen");
-
-var questionScreen = document.querySelector(".question-screen");
-
-var finishScreen = document.querySelector(".finish-screen");
-
-var highScoreScreen = document.querySelector(".high-scores");
 // Variables End //
 
 // Code Start //
-startQuiz.addEventListener("click", function() {
-
-    if (time === 75) {
-        time = setInterval(function() {
-            timeLeft--;
-        }, 1000);
-    }
-
-    if (startScreen.style.display === "block") {
-        startScreen.style.display = "none";
-        questionScreen.style.display = "block";
-    }
-
-    console.log();
-});
