@@ -84,3 +84,20 @@ var questions = [
 // Variables End //
 
 // Code Start //
+function render(questionContainer) {
+    questionScreen.innerHTML = "";
+    answerButton.innerHTML = "";
+
+    for (var i = 0; i < questions.length; i++) {
+        var userQuestion = questions[questionIndex].question;
+        var userAnswers = questions[questionIndex].answerButton;
+    }
+
+    userAnswers.forEach(function (newItem) {
+        var listItem = document.createElement("li");
+        listItem.textContent = newItem;
+        questionContainer.appendChild(ulCreate);
+        ulCreate.appendChild(listItem);
+        listItem.addEventListener("click", (compare));
+    })
+}
