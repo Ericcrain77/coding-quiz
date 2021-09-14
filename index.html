@@ -32,14 +32,15 @@
                     <div id = "question-container">
                         <h1 id="question"></h1>
                         <ul>
-                            <li><button type="button" id="answer1" class="answer-btn"></button></li>
-                            <li><button type="button" id="answer2" class="answer-btn"></button></li>
-                            <li><button type="button" id="answer3" class="answer-btn"></button></li>
-                            <li><button type="button" id="answer4" class="answer-btn"></button></li>
+                            <li><button type="button" id="answer1" class="answer-btn" onclick="checkAnswer()"></button></li>
+                            <li><button type="button" id="answer2" class="answer-btn" onclick="checkAnswer()"></button></li>
+                            <li><button type="button" id="answer3" class="answer-btn" onclick="checkAnswer()"></button></li>
+                            <li><button type="button" id="answer4" class="answer-btn" onclick="checkAnswer()"></button></li>
                         </ul>
                         <div class="answer-check">
                             <!-- Correct or Wrong line-->
-                            <p></p>
+                            <p id = "correct">Correct!</p>
+                            <p id = "wrong">Wrong!</p>
                         </div>
                     </div>
                 </div>

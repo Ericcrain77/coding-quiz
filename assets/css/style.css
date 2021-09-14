@@ -116,12 +116,23 @@ body {
     background-color: var(--secondary-color);
 }
 
-.answer-check {
-    font-size: 28px;
+#correct {
+    font-size: 40px;
     font-weight: lighter;
     font-style: italic;
     border-top: 2px solid gray;
     color: gray;
+    padding-top: 18px;
+    visibility: hidden;
+}
+
+#wrong {
+    font-size: 40px;
+    font-weight: lighter;
+    font-style: italic;
+    border-top: 2px solid gray;
+    color: gray;
+    padding-top: 18px;
     visibility: hidden;
 }
 
