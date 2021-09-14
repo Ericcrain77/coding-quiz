@@ -23,22 +23,21 @@
                 <div>
                     <h1>Coding Quiz Challenge</h1>
                     <h2>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h2>
-                    <button type="button" class="start-btn">Start Quiz</button>
+                    <button type="button" class="start-btn" onclick="startQuiz()">Start Quiz</button>
                 </div>
             </section>
 
             <section class="question-screen">
                 <div>
                     <div id = "question-container">
-                        <h1 id="question">Question</h1>
+                        <h1 id="question"></h1>
                         <ul>
-                            <li><button type="button" id="answer1" class="answer-btn">1. Answer</button></li>
-                            <li><button type="button" id="answer2" class="answer-btn">2. Answer</button></li>
-                            <li><button type="button" id="answer3" class="answer-btn">3. Answer</button></li>
-                            <li><button type="button" id="answer4" class="answer-btn">4. Answer</button></li>
+                            <li><button type="button" id="answer1" class="answer-btn"></button></li>
+                            <li><button type="button" id="answer2" class="answer-btn"></button></li>
+                            <li><button type="button" id="answer3" class="answer-btn"></button></li>
+                            <li><button type="button" id="answer4" class="answer-btn"></button></li>
                         </ul>
                         <div class="answer-check">
-                            <hr>
                             <!-- Correct or Wrong line-->
                             <p></p>
                         </div>

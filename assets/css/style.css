@@ -49,6 +49,7 @@ body {
     display: block;
     justify-content: center;
     text-align: center;
+    visibility: visible;
 }
 
 .start-screen h1 {
@@ -80,9 +81,10 @@ body {
     top: 250px;
     left: 400px;
     right: 400px;
-    display: none;
+    display: block;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    visibility: hidden;
 }
 
 .question-screen div h1 {
@@ -120,6 +122,7 @@ body {
     font-style: italic;
     border-top: 2px solid gray;
     color: gray;
+    visibility: hidden;
 }
 
 .finish-screen {
@@ -127,9 +130,10 @@ body {
     top: 250px;
     left: 400px;
     right: 400px;
-    display: none;
+    display: block;
     justify-content: center;
     text-align: center;
+    visibility: hidden;
 }
 
 .finish-screen div h1 {
@@ -181,9 +185,10 @@ body {
     top: 250px;
     left: 400px;
     right: 400px;
-    display: none;
+    display: block;
     justify-content: center;
     text-align: center;
+    visibility: hidden;
 }
 
 .high-scores div h1 {

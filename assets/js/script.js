@@ -2,55 +2,57 @@
 // Variable Integers //
 var startTime = 75;
 
+var questionNumber = 0;
+
 var questionIndex = 0;
 
 var penalty = 10;
 
-var score = 0;
-
 
 // APIs Variables // 
-var highScoreButton = document.getElementById("#hs-btn");
+var highScoreButton = document.getElementById("hs-btn");
 
-var timer = document.getElementsById("#timer");
+var timer = document.getElementById("timer");
 
-var timeLeft = document.getElementById("#time");
+var timeLeft = document.getElementById("time");
 
-var startScreen = document.getElementByClassName(".start-screen");
+var startScreen = document.getElementsByClassName("start-screen");
 
-var startQuiz = document.getElementByClassName(".start-btn");
+var quizStart = document.getElementsByClassName("start-btn");
 
-var questionScreen = document.getElementByClassName(".question-screen");
+var questionScreen = document.getElementsByClassName("question-screen");
 
-var questionContainer = document.getElementById("#question-container");
+var questionContainer = document.getElementById("question-container");
 
-var question = document.getElemberById("#question");
+var question = document.getElementById("question");
 
-var answer1 = document.getElementById("#answer1");
+var answer1 = document.getElementById("answer1");
 
-var answer2 = document.getElementById("#answer2");
+var answer2 = document.getElementById("answer2");
 
-var answer3 = document.getElementById("#answer3");
+var answer3 = document.getElementById("answer3");
 
-var answer4 = document.getElementById("#answer4");
+var answer4 = document.getElementById("answer4");
 
-var answerButton = document.getElementsByClassName(".answer-btn");
+var answerButton = document.getElementsByClassName("answer-btn");
 
-var answerCheck = document.getElementByClassName(".answer-check");
+var answerCheck = document.getElementsByClassName("answer-check");
 
-var finishScreen = document.getElementByClassName(".finish-screen");
+var finishScreen = document.getElementsByClassName("finish-screen");
 
-var initials = document.getElementByClassName(".initials");
+var initials = document.getElementsByClassName("initials");
 
-var submit = document.getElementByClassName(".submit-btn");
+var submit = document.getElementsByClassName("submit-btn");
 
-var highScore = document.getElementByClassName(".high-scores");
+var highScore = document.getElementsByClassName("high-scores");
 
-var scoreList = document.getElementByClassName(".scores-list");
+var scoreList = document.getElementsByClassName("scores-list");
 
-var goBack = document.getElementByClassName(".return-btn");
+var goBack = document.getElementsByClassName("return-btn");
 
-var clear = document.getElementByClassName(".clear-btn");
+var clear = document.getElementsByClassName("clear-btn");
+
+var ulCreate = document.createElement("ul");
 
 
 // Questions Array//
@@ -84,20 +86,22 @@ var questions = [
 // Variables End //
 
 // Code Start //
-function render(questionContainer) {
-    questionScreen.innerHTML = "";
-    answerButton.innerHTML = "";
+function startQuiz() {
+    document.querySelector(".start-screen").style.visibility = "hidden";
+    document.querySelector(".question-screen").style.visibility = "visible";
 
-    for (var i = 0; i < questions.length; i++) {
-        var userQuestion = questions[questionIndex].question;
-        var userAnswers = questions[questionIndex].answerButton;
-    }
+    question.innerHTML = questions[0].q;
+   
+    answer1.innerHTML = questions[0].a[0];
+    answer2.innerHTML = questions[0].a[1];
+    answer3.innerHTML = questions[0].a[2];
+    answer4.innerHTML = questions[0].a[3];
 
-    userAnswers.forEach(function (newItem) {
-        var listItem = document.createElement("li");
-        listItem.textContent = newItem;
-        questionContainer.appendChild(ulCreate);
-        ulCreate.appendChild(listItem);
-        listItem.addEventListener("click", (compare));
-    })
+
+}
+
+function nextQuestion() {
+    questionNumber++;
+
+    
 }
