@@ -10,7 +10,7 @@
 <body>
     <header class="page-top">
         <div>
-            <button type="button" id="hs-btn">View High Scores</button>
+            <button type="button" id="hs-btn" onclick="highScore()">View High Scores</button>
         </div>
         <div id = "timer">
             Time: <span id = "time"></span>
@@ -51,8 +51,8 @@
                     <div>
                         <h1>All done!</h1>
                         <p>Your final score is <span id="score"></span>.</p>
-                        <p>Enter Initials:<input class="initials"/>
-                        <button type="button" class="submit-btn">Submit</button>
+                        <p>Enter Initials:<input id="initials"/>
+                        <button type="button" class="submit-btn" onclick="saveHighScore()">Submit</button>
                         </p>
                     </div>
                 </div>
@@ -65,8 +65,8 @@
                         <ol id="scores-list">
                             <!--High Scores listed in order from highest to lowest-->
                         </ol>
-                        <button class="return-btn">Go Back</button>
-                        <button class="clear-btn">Clear high scores</button>
+                        <button class="return-btn" onclick="startOver()">Go Back</button>
+                        <button class="clear-btn" onclick="erase()">Clear high scores</button>
                     </div>
                 </div>
             </section>

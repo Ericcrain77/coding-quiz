@@ -45,7 +45,7 @@ var initials = document.getElementsByClassName("initials");
 
 var submit = document.getElementsByClassName("submit-btn");
 
-var highScore = document.getElementsByClassName("high-scores");
+var highScores = document.getElementsByClassName("high-scores");
 
 var scoreList = document.getElementsByClassName("scores-list");
 
@@ -100,6 +100,7 @@ function countdownTimer() {
             score.textContent = time;
             document.querySelector("#correct").style.visibility = "hidden";
             document.querySelector("#wrong").style.visibility = "hidden";
+            document.querySelector("#timer").style.visibility = "hidden";
           } else if (time > 0){
             timeLeft.textContent = time;
             time--;
@@ -135,7 +136,6 @@ function checkAnswer(userGuess) {
 }
 
 function nextQuestion() {
-// countdownTimer();
 if (questionNumber <= 4) {
     
     question.innerHTML = questions[questionNumber].q;
@@ -155,3 +155,40 @@ if (questionNumber <= 4) {
 }
 }
 
+function highScore() {
+    document.querySelector(".finish-screen").style.visibility = "hidden";
+    document.querySelector(".high-scores").style.visibility = "visible";
+    document.querySelector(".start-screen").style.visibility = "hidden";
+    document.querySelector(".question-screen").style.visibility = "hidden";
+    document.querySelector("#correct").style.visibility = "hidden";
+    document.querySelector("#wrong").style.visibility = "hidden";
+    document.querySelector("#timer").style.visibility = "hidden";
+}
+
+function saveHighScore() {
+    var input = document.getElementById("initials").value
+
+    localStorage.setItem("initials", input);
+    localStorage.setItem("score", score.textContent);
+
+    
+    document.querySelector(".finish-screen").style.visibility = "hidden";
+    document.querySelector(".high-scores").style.visibility = "visible";
+    document.querySelector(".start-screen").style.visibility = "hidden";
+    document.querySelector(".question-screen").style.visibility = "hidden";
+    document.querySelector("#correct").style.visibility = "hidden";
+    document.querySelector("#wrong").style.visibility = "hidden";
+    document.querySelector("#timer").style.visibility = "hidden";
+}
+
+function startOver() {
+    document.querySelector(".high-scores").style.visibility = "hidden";
+    document.querySelector(".start-screen").style.visibility = "visible";
+    document.querySelector(".question-screen").style.visibility = "hidden";
+    document.querySelector(".finish-screen").style.visibility = "hidden";
+    location.reload();
+}
+
+function erase() {
+    localStorage.clear();
+}
