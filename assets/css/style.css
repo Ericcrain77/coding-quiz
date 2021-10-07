@@ -4,6 +4,7 @@
     --tertiary-color: #D9D3E9;
     --quaternary-color: #010101;
     --quinary-color: #9E9E9E;
+    --sixth-color: #bcabeb;
 }
   
 * {
@@ -206,6 +207,14 @@ body {
     font-size: 50px;
     margin: 0 0 30px 0;
     font-weight: bolder;
+}
+
+#scores-list {
+    text-align: center;
+    background-color: var(--sixth-color);
+    font-size: xx-large;
+    margin-bottom: 25px;
+    width: 850px;
 }
 
 .return-btn {

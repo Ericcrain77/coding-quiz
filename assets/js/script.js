@@ -163,6 +163,8 @@ function highScore() {
     document.querySelector("#correct").style.visibility = "hidden";
     document.querySelector("#wrong").style.visibility = "hidden";
     document.querySelector("#timer").style.visibility = "hidden";
+    
+    saveHighScore();
 }
 
 function saveHighScore() {
@@ -215,4 +217,5 @@ function startOver() {
 
 function erase() {
     localStorage.clear();
+    document.querySelector("#scores-list").style.visibility = "hidden";
 }
