@@ -166,11 +166,35 @@ function highScore() {
 }
 
 function saveHighScore() {
+    var orange = [];
+
+    var highestScore = {
+        initials: input,
+        score: score.textContent
+    }
+
+    orange.push(highestScore);
+
     var input = document.getElementById("initials").value
 
     localStorage.setItem("initials", input);
     localStorage.setItem("score", score.textContent);
 
+    var banana = localStorage.getItem("initials");
+    var apple = localStorage.getItem("score");
+
+    var listHighScore = document.querySelector("#scores-list");
+
+    if (highestScore !== null) {
+
+        for (var i = 0; i < orange.length; i++) {
+    
+            var createLi = document.createElement("li");
+            createLi.textContent = orange[i].initials + " " + orange[i].score;
+            listHighScore.appendChild(createLi);
+    
+        }
+    }
     
     document.querySelector(".finish-screen").style.visibility = "hidden";
     document.querySelector(".high-scores").style.visibility = "visible";
